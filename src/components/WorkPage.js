@@ -74,8 +74,8 @@ const WorkPage = () => {
          element.style.transform = `translateX(${-window.pageYOffset}px)`
       
          
-          return (yinyang.current.style.transform =
-            'rotate(' + -window.pageYOffset + 'deg)')
+          yinyang.current.style.transform =
+            'rotate(' + -window.pageYOffset + 'deg)'
         }
     
         window.addEventListener('scroll', rotate)
@@ -88,28 +88,28 @@ const WorkPage = () => {
 
     return (
         <ThemeProvider theme={DarkTheme}>
-<Box>
 
-<LogoComponent theme='dark'/>
-<SocialIcons theme='dark'/>
-<PowerButton />
+          <Box>
 
-     <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
-         {
-            Work.map( d => 
-            <Card key={d.id} data={d} />
-            )
-         }
-     </Main>
-<Rotate ref={yinyang}>
-    <YinYang width={80} height={80} fill={DarkTheme.text} />
-</Rotate>
+            <LogoComponent theme='dark'/>
+            <SocialIcons theme='dark'/>
+            <PowerButton />
 
-<BigTitlte text="WORK" top='10%' right="20%" />
-        </Box>
+            <Main ref={ref}   variants={container} initial='hidden' animate='show'  >
+            {
+              Work.map( d => 
+              <Card key={d.id} data={d} />
+              )
+            }
+            </Main>
+            <Rotate ref={yinyang}>
+              <YinYang width={80} height={80} fill={DarkTheme.text} />
+            </Rotate>
+
+            <BigTitlte text="WORK" top='10%' right="20%" />
+          </Box>
 
         </ThemeProvider>
-        
     )
 }
 
