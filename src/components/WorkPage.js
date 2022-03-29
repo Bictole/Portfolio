@@ -9,7 +9,7 @@ import PowerButton from '../subComponents/PowerButton';
 
 import { Work } from "../data/WorkData";
 import Card from '../subComponents/Card';
-import { YinYang } from './AllSvgs';
+import { Python } from './AllSvgs';
 import BigTitlte from '../subComponents/BigTitlte';
 
 const Box = styled.div`
@@ -19,7 +19,6 @@ height:400vh;
 position: relative;
 display: flex;
 align-items: center;
-
 
 `
 
@@ -32,6 +31,7 @@ display: flex;
 
 color:white;
 `
+
 const Rotate = styled.span`
 display:block;
 position: fixed;
@@ -61,7 +61,7 @@ const container = {
 const WorkPage = () => {
 
     const ref = useRef(null);
-    const yinyang = useRef(null);
+    const python = useRef(null);
 
 
 
@@ -74,7 +74,7 @@ const WorkPage = () => {
          element.style.transform = `translateX(${-window.pageYOffset}px)`
       
          
-          yinyang.current.style.transform =
+          python.current.style.transform =
             'rotate(' + -window.pageYOffset + 'deg)'
         }
     
@@ -102,8 +102,8 @@ const WorkPage = () => {
               )
             }
             </Main>
-            <Rotate ref={yinyang}>
-              <YinYang width={80} height={80} fill={DarkTheme.text} />
+            <Rotate ref={python}>
+              <Python width={80} height={80} fill={DarkTheme.text} />
             </Rotate>
 
             <BigTitlte text="WORK" top='10%' right="20%" />
