@@ -61,31 +61,30 @@ const Main =  styled.div`
 const AboutPage = () => {
     return (
         <ThemeProvider theme={DarkTheme}>
-<Box>
+            <Box>
 
-<LogoComponent theme='dark'/>
-<SocialIcons theme='dark'/>
-<PowerButton />
-<ParticleComponent theme='dark' />
+                <LogoComponent theme='dark'/>
+                <SocialIcons theme='dark'/>
+                <PowerButton />
+                <ParticleComponent theme='dark' />
 
-        <Spaceman>
-            <img src={astronaut} alt="spaceman" />
-        </Spaceman>    
-        <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-<br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-<br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
-        </Main>
-
-        <BigTitle text="ABOUT" top="10%" left="5%" />
-
-
-        </Box>
-
-        </ThemeProvider>
+                <Spaceman>
+                <img src={astronaut} alt="spaceman" />
+                </Spaceman>    
         
+                <Main>
+                    I'm a Computer Science Student located in Paris, France. I am currently looking for an end of studies internship int he fields of Data Science or Data Engineering.
+                    <br /> <br/>
+                    I'm interested in AI, mostly in Machine Learning or Deep Learning and I really enjoy doing Hackathon and code events !
+                    <br/> <br/>
+                    I am open to any challenges or any opportunities for the moment, I am working hard to achieve my goals, learn new knowledges and keep smiling !
+
+                </Main>
+
+                <BigTitle text="ABOUT" top="10%" left="5%" />
+
+            </Box>
+        </ThemeProvider>
     )
 }
 
