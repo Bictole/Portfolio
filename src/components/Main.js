@@ -1,11 +1,10 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
-import { YinYang } from './AllSvgs'
 import Intro from './Intro'
 ;
 
@@ -78,41 +77,6 @@ text-decoration: none;
 z-index:1;
 `
 
-const rotate = keyframes`
-from{
-    transform: rotate(0);
-}
-to{
-    transform: rotate(360deg);
-}
-`
-
-const Center = styled.button`
-position: absolute;
-top: 85%;
-left: 100%;
-transform: translate(-50%,-50%);
-border: none;
-outline: none;
-background-color: transparent;
-cursor: pointer;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-transition: all 1s ease;
-
-&>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
-}
-
-&>:last-child{
-    display: none;
-    padding-top: 1rem;
-}
-`
-
 const DarkDiv = styled.div`
 position: absolute;
 top: 0;
@@ -128,9 +92,7 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 
 const Main = () => {
 
-    const [click, setClick] = useState(false);
-
-    const handleClick = () => setClick(!click);
+    const [click] = useState(false);
 
     return (
         <MainContainer>
