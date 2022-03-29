@@ -26,7 +26,7 @@ background: linear-gradient(
     ${props => props.theme.body} 50%,
     ${props => props.theme.text} 50%) top;
     background-repeat: no-repeat;
-background-size: 100% 2px;
+    background-size: 100% 2px;
     border-left: 2px solid ${props => props.theme.body};
     border-right: 2px solid ${props => props.theme.text};
 
@@ -63,34 +63,33 @@ justify-content: space-evenly;
     color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
     font-size: calc(0.5rem + 1.5vw);
     font-weight:300;
-
 }
-
-
-
 `
 
 const Intro = () => {
     return (
         <Box
-        initial={{height:0}}
-        animate={{height: '55vh'}}
+        initial={{height:0, opacity:0}}
+        animate={{height: '55vh', opacity: 1}}
         transition={{ type: 'spring', duration:2, delay:1 }}
         >
             <SubBox>
+
                 <Text>
                     <h1>Hi,</h1>
                     <h3>I'm Victor.</h3>
                     <h6>I study Data Science and Data Engineering in EPITA.</h6>
                 </Text>
+               
             </SubBox>
+
             <SubBox>
                 <motion.div
                 initial={{opacity:0}}
-        animate={{opacity: 1}}
-        transition={{ duration:1, delay:2 }}
+                animate={{opacity: 1}}
+                transition={{ duration:1, delay:2 }}
                 >
-                    <img className="pic" src={Me} alt="Profile Pic" />
+                <img className="pic" src={Me} alt="Profile Pic" />
                 </motion.div>
             </SubBox>
         </Box>
