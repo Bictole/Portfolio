@@ -3,12 +3,12 @@ import styled, { ThemeProvider } from 'styled-components'
 import {lightTheme} from './Themes';
 import { Design, Develope} from './AllSvgs';
 
-
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
+
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -18,8 +18,6 @@ position: relative;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-
-
 `
 
 const Main = styled.div`
@@ -66,7 +64,6 @@ color: ${props => props.theme.text};
 font-size: calc(0.6em + 1vw);
 padding: 0.5rem 0;
 
-
 ${Main}:hover &{
    
         color:${props => props.theme.body};
@@ -85,69 +82,74 @@ ul,p{
 const MySkillsPage = () => {
     return (
         <ThemeProvider theme={lightTheme}>
-<Box>
+            <Box>
 
-<LogoComponent theme='light'/>
-<SocialIcons theme='light'/>
-<PowerButton />
-<ParticleComponent theme='light' />
-            <Main>
-<Title>
-    <Design width={40} height={40} /> Designer
-</Title>
-<Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
-</Description>
-<Description>
-<strong>I like to Design</strong>
-<ul>
-    <li>
-        Web Design
-    </li>
-    <li>
-        Mobile Apps
-    </li>
-</ul>
-</Description>
-<Description>
-<strong>Tools</strong>
-<ul>
-    <li>
-       Figma
-    </li>
+                <LogoComponent theme='light'/>
+                <SocialIcons theme='light'/>
+                <PowerButton />
+                <ParticleComponent theme='light' />
+
+                <Main>
+                    <Title>
+                        <Design width={40} height={40} /> Data Scientist
+                    </Title>
+                    
+                    <Description>
+                        I love hacking problems and learning new knowledges !
+                    </Description>
+                    
+                    <Description>
+                        <strong>I like to work on</strong>
+                        <ul>
+                            <li>
+                                Machine Learning problems, i need more experience on them...
+                            </li>
+                            <li>
+                                Mathematics, to be more comfortable on Convex optimizations or on Gradient Descent ! 
+                            </li>
+                        </ul>
+                    </Description>
+
+                    <Description>
+                        <strong>Tools</strong>
+                        <ul>
+                            <li>
+                                Python (Numpy, Pandas, Keras, Tensorflow, Sci-kit Learn), Scala, Spark
+                            </li>
     
-</ul>
-</Description>
+                        </ul>
+                    </Description>
+                </Main>
+            
+                <Main>
+                    <Title>
+                        <Develope width={40} height={40} /> Software Engineer
+                    </Title>
+                    
+                    <Description>
+                        I believe that a good Data Scientist/Engineer is a good Software Engineer with good practices !  
+                    </Description>
 
-            </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
-</Description>
+                    <Description>
+                        <strong>Skills</strong>
+                        <p>
+                            Python, Scala, C++, C, C#, Java, Ocaml, JS
+                        </p>
+                    </Description>
+                    
+                    <Description>
+                        <strong>Tools</strong>
+                        <p>
+                            VScode, Github, Gitlab, CI/CD
+                        </p>
+                    </Description>
 
-            </Main>
+                </Main>
 
-            <BigTitle text="SKILLS" top="80%" right="30%" />
+                <BigTitle text="SKILLS" top="80%" right="30%" />
 
-        </Box>
-
-        </ThemeProvider>
-        
+            </Box>
+        </ThemeProvider>  
     )
 }
 
