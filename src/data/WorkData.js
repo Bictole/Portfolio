@@ -3,61 +3,48 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"Google Code Jam",
+        description:"The competition that google host online every year. Mostly done in python to solve challenging algorithmic puzzles against the clock.",
+        tags:["google","competition","algorithmic_puzzle"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://github.com/Bictole/Google_Code_Jam",
+        github:"https://github.com/Bictole/Google_Code_Jam"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Genetic-Knapsack",
+        description:"A funny way to solve the Knapsack problem efficiently by using some genetic algorithm method.",
+        tags:["python","genetic", "knapsack"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
-        
+        demo:"https://github.com/Bictole/Genetic-Knapsack",
+        github:"https://github.com/Bictole/Genetic-Knapsack"
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"ODYH",
+        description:"A RPG 2D game achieved with C# and unity based on the universe of Epita (my IT school).",
+        tags:["C#","unity","rpg", "game"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        demo:"https://github.com/Bictole/ODYH",
+        github:"https://github.com/Bictole/ODYH"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"OCR",
+        description:"An optical character recognition made in C, with pre-processing, segmentation and a neural network to recognize character.",
+        tags:["C","optical","neural_network"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        demo:"https://github.com/Bictole/OCR",
+        github:"https://github.com/Bictole/OCR"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
+        name:"Hackathon 4.0",
+        description:"Small browser extension achieved during an Hackathon in India. The purpose was to help disabled people to access internet easily",
         tags:["react","redux","framer-motion"],
         
         demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
         github:"https://github.com/codebucks27/React-Redux-Todo-App"
         
-    },
-    {
-        id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
-        
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
-        
-    },
-    
-  
+    }
 ] 
