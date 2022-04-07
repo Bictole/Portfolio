@@ -43,8 +43,8 @@ export const Work = [
         description:"Small browser extension achieved during an Hackathon in India. The purpose was to help disabled people to access internet easily",
         tags:["react","redux","framer-motion"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+        demo:"https://github.com/Bictole/HACKATHON4.0",
+        github:"https://github.com/Bictole/HACKATHON4.0"
         
     }
 ] 

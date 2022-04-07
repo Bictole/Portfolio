@@ -19,7 +19,6 @@ height:400vh;
 position: relative;
 display: flex;
 align-items: center;
-
 `
 
 const Main = styled(motion.ul)`
@@ -74,8 +73,8 @@ const WorkPage = () => {
          element.style.transform = `translateX(${-window.pageYOffset}px)`
       
          
-          python.current.style.transform =
-            'rotate(' + -window.pageYOffset + 'deg)'
+          //python.current.style.transform =
+          //  'rotate(' + -window.pageYOffset + 'deg)'
         }
     
         window.addEventListener('scroll', rotate)
