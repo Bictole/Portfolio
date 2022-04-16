@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
-import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import Intro from './Intro'
 ;
@@ -98,7 +97,6 @@ const Main = () => {
         <MainContainer>
             <DarkDiv   click={click}/>
             <Container>
-                <PowerButton />
                 <LogoComponent theme='dark'/>
                 <SocialIcons theme='dark'/>
 
