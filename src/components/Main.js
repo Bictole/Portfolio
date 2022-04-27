@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { lazy, Suspense, useState } from "react";
 import { motion } from "framer-motion";
@@ -9,7 +9,6 @@ import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
 
-const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const SocialIcons = lazy(() => import("./../subComponents/SocialIcons"));
 
 const LogoComponent = lazy(() => import("./../subComponents/LogoComponent"));
@@ -55,6 +54,10 @@ const Contact = styled(NavLink)`
   right: calc(1rem + 2vw);
   text-decoration: none;
   z-index: 1;
+
+  @media only screen and (max-width: 50em) {
+    color: ${(props) => props.theme.body};
+  }
 `;
 const BLOG = styled(NavLink)`
   color: ${(props) => props.theme.text};
@@ -66,6 +69,7 @@ const BLOG = styled(NavLink)`
 
   text-decoration: none;
   @media only screen and (max-width: 50em) {
+    color: ${(props) => props.theme.body};
     text-shadow: 0 0 4px #000;
   }
 `;
@@ -78,7 +82,7 @@ const WORK = styled(NavLink)`
   z-index: 1;
   text-decoration: none;
   @media only screen and (max-width: 50em) {
-    text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
+    text-shadow: 0 0 4px #000;
   }
 `;
 const BottomBar = styled.div`
@@ -96,6 +100,10 @@ const ABOUT = styled(NavLink)`
   color: ${(props) => props.theme.body};
   text-decoration: none;
   z-index: 1;
+
+  ${mediaQueries(50)`
+        color: #000000;
+`};
 `;
 const SKILLS = styled(NavLink)`
   color: ${(props) => props.theme.text};
@@ -112,28 +120,18 @@ const DarkDiv = styled.div`
   transition: height 0.5s ease, width 1s ease 0.5s;
   z-index: 1;
 
-  ${(props) =>
-    props.click
-      ? mediaQueries(50)`
-       height: 50%;
-  right:0;
+  ${mediaQueries(50)`
+        height: 50%;
+        right:0;
   
-  width: 100%;
-  transition: width 0.5s ease, height 1s ease 0.5s;
-
-  `
-      : mediaQueries(50)`
-       height: 0;
-  
-  width: 0;
-  `};
+        width: 100%;
+        transition: width 0.5s ease, height 1s ease 0.5s;
+`};
 `;
 
 const Main = () => {
   const [click, setClick] = useState(false);
   const [path, setpath] = useState("");
-
-  const handleClick = () => setClick(!click);
 
   const moveY = {
     y: "-100%",
