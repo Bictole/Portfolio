@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { DarkTheme } from '../components/Themes'
+import { DarkTheme, mediaQueries } from "../components/Themes";
 
 
 
@@ -21,6 +21,13 @@ transition: transform .2s;
 &:hover {
   transform: scale(1.2);
 }
+
+
+${mediaQueries(40)`
+      font-size:1.5em;
+      left:1rem;
+      top:2rem;
+  `};
 `
 
 const LogoComponent = (props) => {
