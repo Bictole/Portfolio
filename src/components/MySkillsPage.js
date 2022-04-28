@@ -4,8 +4,15 @@ import styled, { ThemeProvider } from "styled-components";
 import { lazy, Suspense } from "react";
 import { lightTheme, mediaQueries } from "./Themes";
 
+<<<<<<< HEAD
 import { Design, Develope } from "./AllSvgs";
 import Loading from "../subComponents/Loading";
+=======
+import LogoComponent from '../subComponents/LogoComponent';
+import SocialIcons from '../subComponents/SocialIcons';
+import ParticleComponent from '../subComponents/ParticlesComponent';
+import BigTitle from '../subComponents/BigTitle'
+>>>>>>> 4f0b18f ([Fix] Global fix on typo and add media queries for about page)
 
 //Components
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
