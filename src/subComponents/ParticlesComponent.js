@@ -15,7 +15,7 @@ bottom:0;
 z-index:0;
 `
 
-const ParticleComponent = (props) => {
+const ParticlesComponent = (props) => {
     return (
         <Box>
             <Particles style={{position:'absolute',top:0}}   params={props.theme === "light" ? configLight : configDark   } />
@@ -23,4 +23,4 @@ const ParticleComponent = (props) => {
     )
 }
 
-export default ParticleComponent
+export default ParticlesComponent

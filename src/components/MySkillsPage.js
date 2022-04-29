@@ -5,8 +5,8 @@ import { Design, Develope} from './AllSvgs';
 
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
-import ParticleComponent from '../subComponents/ParticleComponent';
-import BigTitle from '../subComponents/BigTitlte'
+import ParticleComponent from '../subComponents/ParticlesComponent';
+import BigTitle from '../subComponents/BigTitle'
 
 
 const Box = styled.div`

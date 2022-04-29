@@ -8,7 +8,7 @@ import PowerButton  from '../subComponents/PowerButton'
 import {Blogs} from '../data/BlogData';
 import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
-import BigTitle from "../subComponents/BigTitlte"
+import BigTitle from "../subComponents/BigTitle"
 import { motion } from 'framer-motion'
 
 
