@@ -6,13 +6,7 @@ import styled, { ThemeProvider } from "styled-components";
 
 import { Python } from "./AllSvgs";
 import { Work } from "../data/WorkData";
-<<<<<<< HEAD
 import { DarkTheme, mediaQueries } from "./Themes";
-=======
-import Card from '../subComponents/Card';
-import { Python } from './AllSvgs';
-import BigTitlte from '../subComponents/BigTitle';
->>>>>>> 4f0b18f ([Fix] Global fix on typo and add media queries for about page)
 
 import Card from "../subComponents/Card";
 import Loading from "../subComponents/Loading";
