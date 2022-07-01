@@ -2,6 +2,10 @@
 
 This is the repository for my portfolio. The goal was to have fun with **web development** and to expose some of my skills and projects. It is made only with **React** !
 
+The website is available on the following URL : victorsimonin.fr
+
+## Home Page
+
 We have :
 
 * **Black_White module** that is supposed to binarize the images into a black and white only image.
