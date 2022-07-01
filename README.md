@@ -1,23 +1,26 @@
 # Portfolio [![Profile][title-img]][profile]
 
+[title-img]:https://img.shields.io/badge/-Bictole-pink
+[profile]:https://github.com/bictole
+
 This is the repository for my portfolio. The goal was to have fun with **web development** and to expose some of my skills and projects. It is made only with **React** !
 
-The website is available on the following URL : victorsimonin.fr
+The website is available on the following URL : [victorsimonin.fr](victorsimonin.fr)
 
 ## Home Page
 
-We have :
 
-* **Black_White module** that is supposed to binarize the images into a black and white only image.
-* **Interface module** which contain the interface program, made with SDL 2.0
-* **Neural_Network module**, the machine learning part of the OCR.
-* **Reconstruction module**, this part comes after the segmentation and the neural network, where our code needs to reconstruct the initial text from the image into a buffer.
-* **Segmentation module** is the part of the program where the input image is segmented into different paragraphs, lines, words and finally letters and that send the pixels matrices into the neural network.
-* **Tools module**, contains several uselful tools, especially for the SDL library manipulation.
+<img src="https://github.com/Bictole/Portfolio/blob/master/readme_images/home.png" alt="Home">
 
+The home page is main point of the routing, we can find a picture of me and all the links to the other pages.
 
-[title-img]:https://img.shields.io/badge/-Bictole-pink
-[profile]:https://github.com/bictole
+We have the following pages :
+
+* **Blog page** which is under development for now, it may contains my curriculum. 
+* **Skills page** that contains a short description of my main skills and what i like in computer science.
+* **About page**, a short text that sum up who i am, where i am studying now and my center of interest. 
+* **Work Page**, this part contains some of my most important project and the work i am on currently.
+
 
 
 ## How It Works
