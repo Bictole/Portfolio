@@ -1,14 +1,6 @@
-Welcome on my portfolio !
+# Portfolio [![Profile][title-img]][profile]
 
-Link : https://victorsimonin.fr
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-# OCR [![Profile][title-img]][profile]
-
-<img src="https://github.com/Bictole/OCR/blob/master/Test_img/readme_images/logo.png" align="right" alt="The OCR Logo" width="180" height="180">
-
-OCR is an Optical Character Recognition made in C. The goal was to perform a binarization, a segmentation and send the matrices in a neural network to recognize the characters in an image.
+This is the repository for my portfolio. The goal was to have fun with **web development** and to expose some of my skills and projects. It is made only with **React** !
 
 We have :
 
