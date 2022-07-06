@@ -22,12 +22,17 @@ We have the following pages :
 * **Work Page**, this part contains some of my most important project and the work i am on currently.
 
 
+## Social Part
 
-## How It Works
+<img src="https://github.com/Bictole/Portfolio/blob/master/readme_images/social.png" align="right" alt="Social_part" width="180" height="180">
 
-The OCR contains a CLI tool which is used to demonstrate the **segmentation** part of the project.
+The portfolio contains a fix **social part** which contains the three most important links about me.
 
-<img src="https://github.com/Bictole/OCR/blob/master/Test_img/readme_images/segmented.png" alt="Segmented image">
+You can find my :
+* [Github account](https://github.com/Bictole)
+* [Kaggle account](https://www.kaggle.com/victorsimonin)
+* [Linkedin](https://www.linkedin.com/in/victor-simonin/)
+
 
 ### Usage
 
