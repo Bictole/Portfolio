@@ -24,7 +24,7 @@ We have the following pages :
 
 ## Social Part
 
-<img src="https://github.com/Bictole/Portfolio/blob/master/readme_images/social.png" align="right" alt="Social_part" width="180" height="180">
+<img src="https://github.com/Bictole/Portfolio/blob/master/readme_images/social.png" align="right" alt="Social_part">
 
 The portfolio contains a fix **social part** which contains the three most important links about me.
 
