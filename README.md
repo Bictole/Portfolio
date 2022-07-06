@@ -34,32 +34,13 @@ You can find my :
 * [Kaggle account](https://www.kaggle.com/victorsimonin)
 
 
+## Usage
 
-### Usage
+Anyone can easily fork or clone the project to take it as a reference and work with it.
 
-```bash
-make
-./src/main
-```
-
-The trash files produced by the compilation could be removed by :
+You just need to run :
 
 ```bash
-make clean
+npm i
+npm start
 ```
-
-or
-
-```bash
-make properclean
-```
-
-## Interface
-
-The interface is made with SDL 2.0, it's a really simple component that need to be refactored. Here is a diagram that demonstrate its usability.
-
-<img src="https://github.com/Bictole/OCR/blob/master/Test_img/readme_images/interface.png" alt="Interface">
-
-## Costs
-
-<img src="https://github.com/Bictole/OCR/blob/master/Test_img/readme_images/costs.png" alt="The outrageous Costs">
