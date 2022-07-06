@@ -30,8 +30,9 @@ The portfolio contains a fix **social part** which contains the three most impor
 
 You can find my :
 * [Github account](https://github.com/Bictole)
-* [Kaggle account](https://www.kaggle.com/victorsimonin)
 * [Linkedin](https://www.linkedin.com/in/victor-simonin/)
+* [Kaggle account](https://www.kaggle.com/victorsimonin)
+
 
 
 ### Usage
