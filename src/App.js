@@ -14,6 +14,7 @@ const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
 const BlogPage = lazy(() => import("./components/BlogPage"));
 const WorkPage = lazy(() => import("./components/WorkPage"));
 const SoundBar = lazy(() => import("./subComponents/SoundBar"));
+const ChristmasList = lazy(() => import("./components/ChristmasList"));
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,8 @@ function App() {
               <Route exact path="/work" component={WorkPage} />
 
               <Route exact path="/skills" component={MySkillsPage} />
+
+              <Route exact path="/liste" component={ChristmasList} />
             </Switch>
           </AnimatePresence>
         </Suspense>
