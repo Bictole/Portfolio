@@ -13,7 +13,6 @@ const AboutPage = lazy(() => import("./components/AboutPage"));
 const MySkillsPage = lazy(() => import("./components/MySkillsPage"));
 const BlogPage = lazy(() => import("./components/BlogPage"));
 const WorkPage = lazy(() => import("./components/WorkPage"));
-const SoundBar = lazy(() => import("./subComponents/SoundBar"));
 const ChristmasList = lazy(() => import("./components/ChristmasList"));
 
 function App() {
@@ -22,11 +21,8 @@ function App() {
   return (
     <>
       <GlobalStyle />
-
       <ThemeProvider theme={lightTheme}>
         <Suspense fallback={<Loading />}>
-          <SoundBar />
-
           <AnimatePresence exitBeforeEnter>
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" component={Main} />
