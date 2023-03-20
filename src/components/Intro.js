@@ -206,9 +206,9 @@ const Intro = () => {
         <Text>
           <h1>Hi,</h1>
 
-          <h3>I'm Victor.</h3>
+          <h3>I'm Victor Simonin</h3>
 
-          <h6>I study Data Science and Data Engineering in EPITA.</h6>
+          <h6>I study Data Science and Machine Learning in EPITA.</h6>
         </Text>
       </SubBox>
       <SubBox>

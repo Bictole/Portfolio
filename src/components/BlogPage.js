@@ -12,7 +12,6 @@ import { mediaQueries } from "./Themes";
 
 const AnchorComponent = lazy(() => import("../subComponents/Anchor"));
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
-const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const LogoComponent = lazy(() => import("../subComponents/LogoComponent"));
 const BigTitle = lazy(() => import("../subComponents/BigTitle"));
 
@@ -89,8 +88,6 @@ const BlogPage = () => {
       >
         <Container>
           <LogoComponent />
-
-          <PowerButton />
 
           <SocialIcons />
           <AnchorComponent number={number} />
