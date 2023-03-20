@@ -5,7 +5,7 @@ import Chantier from '../assets/Images/webDev.jpg'
 export const Blogs = [
     {
         id:1,
-        name:"This page is under development",
+        name:"This page is under development by Victor Simonin",
         tags:["help","time","future"],
         date:"66 February, 3000",
         imgSrc: Chantier,
@@ -13,7 +13,7 @@ export const Blogs = [
     },
     {
         id:2,
-        name:"This page is under development",
+        name:"This page is under development by Victor Simonin",
         tags:["help","time","future"],
         date:"66 February, 3000",
         imgSrc: Chantier,

@@ -8,7 +8,6 @@ import astronaut from "../assets/Images/spaceman.png";
 import Loading from '../subComponents/Loading';
 //Components
 const SocialIcons = lazy(() => import('../subComponents/SocialIcons'))
-const PowerButton = lazy(() => import('../subComponents/PowerButton'))
 const LogoComponent = lazy(() => import('../subComponents/LogoComponent'))
 const ParticlesComponent = lazy(() =>
   import('../subComponents/ParticlesComponent')
@@ -96,7 +95,6 @@ const AboutPage = () => {
           animate={{ opacity: 1, transition: { duration: 0.5 } }}
           exit={{ opacity: 0, transition: { duration: 0.5 } }}>
           <LogoComponent theme='dark' />
-          <PowerButton />
           <SocialIcons theme='dark' />
           <ParticlesComponent theme='dark' />
 
@@ -112,8 +110,8 @@ const AboutPage = () => {
           <Main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}>
-            I'm a Computer Science Student located in Paris, France. I am currently looking for an end of studies internship int he fields of Data Science or Data Engineering.
-            <br /> <br/>
+            I'm Victor Simonin, a Computer Science Student located in Paris, France. I am currently in my end of studies internship in Deepomatic as a Machine Learning Engineer.
+            <br /> <br/> 
             I'm interested in AI, mostly in Machine Learning or Deep Learning and I really enjoy doing Hackathon and code events !
             <br/> <br/>
             I am open to any challenges or any opportunities for the moment, I am working hard to achieve my goals, learn new knowledges and keep smiling !
