@@ -4,8 +4,20 @@ import Knapsack from '../assets/Images/knapsack.png'
 import Odyh from '../assets/Images/Odyh.png'
 import OCR from '../assets/Images/OCR.png'
 import Hackathon from '../assets/Images/hackathon.jpg'
+import Advent from '../assets/Images/advent.png'
+import GoogleKickstart from '../assets/Images/kickstart.jpg'
+import Peaceland from '../assets/Images/peaceland.png'
 
 export const Work = [
+    {
+        id:1,
+        name:"Peaceland",
+        imgSrc: Peaceland,
+        description:"A scala, spark, kafka, node and react project to restore peace in Peaceland",
+        
+        demo:"https://github.com/Bictole/Google_Code_Jam",
+        github:"https://github.com/Bictole/Google_Code_Jam"
+    },
     {
         id:1,
         name:"Google Code Jam",
@@ -14,6 +26,15 @@ export const Work = [
         
         demo:"https://github.com/Bictole/Google_Code_Jam",
         github:"https://github.com/Bictole/Google_Code_Jam"
+    },
+    {
+        id:1,
+        name:"Google Kickstart",
+        imgSrc: GoogleKickstart,
+        description:"Participated in Google Kickstart, just read the Code Jam description ...",
+        
+        demo:"https://github.com/Bictole/Google_Kickstart",
+        github:"https://github.com/Bictole/Google_Kickstart"
     },
     {
         id:2,
@@ -41,8 +62,8 @@ export const Work = [
         
         demo:"https://github.com/Bictole/OCR",
         github:"https://github.com/Bictole/OCR"
-       
-    },{
+    },
+    {
         id:5,
         name:"Hackathon 4.0",
         imgSrc: Hackathon,
@@ -50,6 +71,14 @@ export const Work = [
         
         demo:"https://github.com/Bictole/HACKATHON4.0",
         github:"https://github.com/Bictole/HACKATHON4.0"
+    },
+    {
+        id:6,
+        name:"Advent of Code",
+        imgSrc: Advent,
+        description:"Daily coding challenges, fostering skills in algorithms and problem-solving",
         
+        demo:"https://github.com/Bictole/Advent-of-Code",
+        github:"https://github.com/Bictole/Advent-of-Code"
     }
 ] 
