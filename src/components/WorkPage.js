@@ -12,7 +12,6 @@ import Card from "../subComponents/Card";
 import Loading from "../subComponents/Loading";
 
 const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
-const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const LogoComponent = lazy(() => import("../subComponents/LogoComponent"));
 const BigTitle = lazy(() => import("../subComponents/BigTitle"));
 
@@ -131,7 +130,6 @@ const WorkPage = () => {
           exit={{ opacity: 0, transition: { duration: 0.5 } }}
         >
           <LogoComponent theme="dark" />
-          <PowerButton />
           <SocialIcons theme="dark" />
 
           <Main ref={ref} variants={container} initial="hidden" animate="show">

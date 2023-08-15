@@ -29,81 +29,51 @@ const Box = styled(motion.li)`
         width:16rem;
         margin-right:6rem;
         height:35vh;
-       
-
   `};
   ${mediaQueries(40)`
         width:14rem;
         margin-right:4rem;
         height:35vh;
-        
-        
-
   `};
   ${mediaQueries(25)`
         width:12rem;
         margin-right:4rem;
         height:35vh;
-padding:1.5rem 1.5rem;
-        
-        
-
+        padding:1.5rem 1.5rem;
   `};
   ${mediaQueries(20)`
         width:10rem;
         margin-right:4rem;
         height:40vh;
-
-        
-        
-
   `};
 `;
 
 const Title = styled.h2`
   font-size: calc(1em + 0.5vw);
 `;
+
 const Description = styled.h4`
+  padding-top: 0.5rem;
   font-size: calc(0.8em + 0.3vw);
 
   font-family: "Karla", sans-serif;
   font-weight: 500;
+
   ${mediaQueries(25)`
   font-size:calc(0.7em + 0.3vw);
-
-
-
   `};
+
   ${mediaQueries(20)`
   font-size:calc(0.6em + 0.3vw);
-
-
-
   `};
 `;
-const Tags = styled.div`
-  border-top: 2px solid ${(props) => props.theme.body};
-  padding-top: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  ${Box}:hover & {
-    border-top: 2px solid ${(props) => props.theme.text};
-  }
-`;
-const Tag = styled.span`
-  margin-right: 1rem;
-  font-size: calc(0.8em + 0.3vw);
 
-  ${mediaQueries(25)`
-  font-size:calc(0.7em);
-
-
-  `};
-`;
 const Footer = styled.footer`
+  padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
 `;
+
 const Link = styled(NavLink)`
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
@@ -117,6 +87,7 @@ const Link = styled(NavLink)`
     color: ${(props) => props.theme.body};
   }
 `;
+
 const Git = styled(NavLink)`
   color: inherit;
   text-decoration: none;
@@ -128,22 +99,36 @@ const Git = styled(NavLink)`
   }
 `;
 
+const Image = styled.div`
+  background-image: ${(props) => `url(${props.img})`};
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  border: 1px solid transparent;
+  background-position: center center;
+
+  ${mediaQueries(25)`
+    height:70%;
+  `};
+
+  ${Box}:hover & {
+    border: 1px solid ${(props) => props.theme.body};
+  }
+`;
+
 const item = {
   hidden: { scale: 0 },
   show: { scale: 1, transition: { type: "spring", duration: 0.5 } },
 };
-//const tags = ["react","gsap","javascript"]
+
 const Card = (props) => {
-  const { id, name, description, tags, demo, github } = props.data;
+  const { id, name, imgSrc, description, demo, github } = props.data;
   return (
     <Box key={id} variants={item}>
       <Title>{name}</Title>
+      <Image img={imgSrc} />
       <Description>{description}</Description>
-      <Tags>
-        {tags.map((t, id) => (
-          <Tag key={id}>#{t}</Tag>
-        ))}
-      </Tags>
+
       <Footer>
         <Link to={{ pathname: `${demo}` }} target="_blank">
           Visit
