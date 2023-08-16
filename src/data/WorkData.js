@@ -1,4 +1,4 @@
-import Chantier from '../assets/Images/webDev.jpg'
+// import Chantier from '../assets/Images/webDev.jpg'
 import GoogleCodeJam from '../assets/Images/google_code_jam.png'
 import Knapsack from '../assets/Images/knapsack.png'
 import Odyh from '../assets/Images/Odyh.png'
@@ -19,7 +19,7 @@ export const Work = [
         github:"https://github.com/Bictole/Google_Code_Jam"
     },
     {
-        id:1,
+        id:2,
         name:"Google Code Jam",
         imgSrc: GoogleCodeJam,
         description:"Participated in Google Code Jam, showcasing problem-solving and coding skills",
@@ -28,7 +28,7 @@ export const Work = [
         github:"https://github.com/Bictole/Google_Code_Jam"
     },
     {
-        id:1,
+        id:3,
         name:"Google Kickstart",
         imgSrc: GoogleKickstart,
         description:"Participated in Google Kickstart, just read the Code Jam description ...",
@@ -37,7 +37,7 @@ export const Work = [
         github:"https://github.com/Bictole/Google_Kickstart"
     },
     {
-        id:2,
+        id:4,
         name:"Genetic-Knapsack",
         imgSrc: Knapsack,
         description:"Knapsack problem solved efficiently by using some genetic algorithm method",
@@ -46,7 +46,7 @@ export const Work = [
         github:"https://github.com/Bictole/Genetic-Knapsack"
     },
     {
-        id:3,
+        id:5,
         name:"ODYH",
         imgSrc: Odyh,
         description:"A RPG 2D game achieved with C# and unity based on the universe of Epita",
@@ -55,7 +55,7 @@ export const Work = [
         github:"https://github.com/Bictole/ODYH"
     },
     {
-        id:4,
+        id:6,
         name:"OCR",
         imgSrc: OCR,
         description:"An optical character recognition made in C with a simple neural network",
@@ -64,7 +64,7 @@ export const Work = [
         github:"https://github.com/Bictole/OCR"
     },
     {
-        id:5,
+        id:7,
         name:"Hackathon 4.0",
         imgSrc: Hackathon,
         description:"Browser extension in an Indian Hackathon, aiding internet accessibility",
@@ -73,7 +73,7 @@ export const Work = [
         github:"https://github.com/Bictole/HACKATHON4.0"
     },
     {
-        id:6,
+        id:8,
         name:"Advent of Code",
         imgSrc: Advent,
         description:"Daily coding challenges, fostering skills in algorithms and problem-solving",
