@@ -19,7 +19,7 @@ const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   position: relative;
   display: flex;
-  height: 400vh;
+  height: 600vh;
 `;
 
 const Main = styled(motion.ul)`
@@ -28,34 +28,24 @@ const Main = styled(motion.ul)`
   left: calc(10rem + 15vw);
 
   height: 40vh;
-  /* height:200vh; */
-  //border:1px solid white;
 
   display: flex;
 
   ${mediaQueries(50)`
-        
-        
-        left:calc(8rem + 15vw);
-
+      left:calc(8rem + 15vw);
   `};
 
   ${mediaQueries(40)`
-  top: 30%;
-        
-        left:calc(6rem + 15vw);
-
+      top: 30%;  
+      left:calc(6rem + 15vw);
   `};
 
-  ${mediaQueries(40)`
-        
-        left:calc(2rem + 15vw);
-
+  ${mediaQueries(40)`    
+      left:calc(2rem + 15vw);
   `};
+
   ${mediaQueries(25)`
-        
-        left:calc(1rem + 15vw);
-
+      left:calc(1rem + 15vw);
   `};
 `;
 

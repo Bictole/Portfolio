@@ -208,7 +208,7 @@ const Intro = () => {
 
           <h3>I'm Victor Simonin</h3>
 
-          <h6>I study Data Science and Machine Learning in EPITA.</h6>
+          <h6>Machine Learning Engineer graduated from EPITA.</h6>
         </Text>
       </SubBox>
       <SubBox>
